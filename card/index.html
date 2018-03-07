@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gpack - Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900");
+        @import url("https://cdn.linearicons.com/free/1.0.0/icon-font.min.css");
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+      .gpack-card {
+        margin: auto;
+        height: 660px; /* set your own card height */
+        width: 450px; /* set your own card width */
+        background: #fff;
+        box-shadow: 0 1px 38px rgba(0, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+      }
+      .gpack-card .top {
+        position: relative;
+        height: 410px; /* set your own image height */
+        width: 100%;
+        overflow: hidden;
+        background: url("dent.jpg") no-repeat; /* insert own bg image */
+        background-size: cover;
+        background-position: center center;
+        text-align: center;
+      }
+      .gpack-card .top .wrapper {
+        padding: 30px;
+        position: relative;
+        z-index: 1;
+      }
+      .gpack-card .top .wrapper .mynav {
+        height: 20px;
+      }
+      .gpack-card .top .wrapper .mynav .lnr {
+        color: #fff;
+        font-size: 20px;
+      }
+      .gpack-card .top .wrapper .mynav .lnr-chevron-left {
+        display: inline-block;
+        float: left;
+      }
+      .gpack-card .top .wrapper .mynav .lnr-cog {
+        display: inline-block;
+        float: right;
+      }
+      .gpack-card .top .wrapper .heading {
+        margin-top: 20px;
+        font-size: 35px;
+        font-weight: 400;
+        color: #fff;
+      }
+      .gpack-card .top .wrapper .subtext {
+        margin-top: 20px;
+        font-size: 21px;
+        font-weight: 400;
+        color: #fff;
+      }
+      .gpack-card .top .wrapper .price {
+        margin-top: 20px;
+      }
+      .gpack-card .top .wrapper .price {
+        text-decoration: none;
+        color: #fff;
+      }
+      .gpack-card .top .wrapper .price .price-value {
+        font-size: 85px;
+      }
+      .gpack-card .top .wrapper .price .price-value {
+        display: inline-block;
+        font-size: 85px;
+        font-weight: 600;
+        color: #fff;
+      }
+      .gpack-card .top .wrapper .price .currancy {
+        display: inline-block;
+        font-size: 35px;
+        font-weight: 600;
+        color: #fff;
+        vertical-align: top;
+        margin-top: 10px;
+      }
+      .gpack-card .top:after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .gpack-card .bottom {
+        padding: 0 30px;
+        background: #fff;
+      }
+      .gpack-card .bottom .wrapper .forecast {
+        overflow: scroll;
+        margin: 0;
+        font-size: 0;
+        padding: 0;
+        padding-top: 20px;
+        max-height: 230px;
+      }
+
+
+      .gpack-card .bottom .wrapper .forecast li {
+        display: block;
+        font-size: 25px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.25);
+        line-height: 1em;
+        margin-bottom: 30px;
+      }
+      .gpack-card .bottom .wrapper .forecast li .date {
+        display: inline-block;
+      }
+      .gpack-card .bottom .wrapper .forecast li .condition {
+        display: inline-block;
+        vertical-align: middle;
+        float: right;
+        font-size: 25px;
+      }
+      .gpack-card .bottom .wrapper .forecast li .condition .price {
+        display: inline-block;
+        vertical-align: top;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 2px;
+      }
+      .gpack-card .bottom .wrapper .forecast li .condition .price .deg {
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 600;
+        margin-left: 3px;
+        vertical-align: top;
+      }
+      .gpack-card .bottom .wrapper .forecast li .condition .price .price-type {
+        font-size: 20px;
+      }
+      .gpack-card .bottom .wrapper .forecast li.active {
+        color: rgba(0, 0, 0, 0.8);
+      }
+
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <div class="gpack-card one">
+  		<div class="top">
+  			<div class="wrapper">
+  				<div class="mynav">
+            <!-- If you want top nav items-->
+  				</div>
+  				<h1 class="heading">Tannbleking</h1> <!-- Insert title -->
+  				<h3 class="subtext">Something</h3> <!-- Insert ingress OPTIONAL -->
+  				<p class="price">
+  					<span class="price-value">2000</span> <!-- Insert price -->
+  					<span class="currancy">NOK</span>
+  				</p>
+  			</div>
+  		</div>
+  		<div class="bottom">
+  			<div class="wrapper">
+  				<ul class="forecast">
+  					<li class="active">
+  						<span class="description">Har du tenner som oppleves som litt gulaktig eller ønsker du et skinnende hvitt smil? Da kan
+tannbleking være noe for deg. Tannbleking, når den utføres riktig, er en skånsom og enkel
+behandling som gir tennene et hvitere ytre. Tannbleking er som regel smertefritt og utføres uten
+bedøvelse. Før du kan bleke tennene må tannlegen sjekke tennene dine og eventuelt behandle dem
+for hull, de bør pusses fri for tannbelegg (plakk og misfarging) slik at blekemiddelet får virke effektivt
+på tannoverflaten.</span>
+  					</li>
+  				</ul>
+  			</div>
+  		</div>
+  	</div>
+
+
+    <br><br><br><br>
+  </body>
+</html>
